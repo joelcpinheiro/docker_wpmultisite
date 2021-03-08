@@ -15,7 +15,9 @@ https://docs.docker.com/compose/install/
 git clone https://github.com/joelcpinheiro/docker_wpmultisite.git
 ```
 
-2. Execute the command to start the environment:
+2. On docker-compose.yaml file, update the environment parameters of wordpress and db container by one of your preference; 
+
+3. Execute the command to start the environment:
 
 ```sh
 docker-compose up -d
@@ -23,16 +25,16 @@ docker-compose up -d
 
 At this moment will be created two containers on your stack, do you need to access the environment and enable the Multisite option:
 
-Check _data directory of wordpress container and edit the wp-config.php file after the 88 line add the param below:
+Check ```_data``` directory of wordpress container and edit the wp-config.php file after the 88 line add the param below:
 
 ```sh
 /* Multisite */
 define( 'WP_ALLOW_MULTISITE', true );
 ```
 
-3. Now, do you have to install WordPress as used to, click in TOOLS > NETWORK SETUP, edit the Network title and Email and click on Install to activate multisite.
+4. Now, do you have to install WordPress as used to, click in TOOLS > NETWORK SETUP, edit the Network title and Email and click on Install to activate multisite.
 
-4. Follow the instructions that are edit the wp-config.php and .htaccess files, respectively:
+5. Follow the instructions that are edit the wp-config.php and .htaccess files, respectively:
 
 ```sh
 define('MULTISITE', true);
@@ -60,7 +62,7 @@ RewriteRule ^([_0-9a-zA-Z-]+/)?(.*\.php)$ $2 [L]
 RewriteRule . index.php [L]
 ```
 
-5. Access WordPres Admin Panel and edit Network Settings default for all sites if you I'll create.
+6. Access WordPres Admin Panel and edit Network Settings default for all sites if you I'll create.
 
 **OBS**: None
 
