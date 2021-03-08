@@ -12,15 +12,6 @@ services:
       WORDPRESS_DB_USER: exampleuser
       WORDPRESS_DB_PASSWORD: examplepass
       WORDPRESS_DB_NAME: exampledb
-      WORDPRESS_CONFIG_EXTRA: |
-      /* Multisite */
-        define('WP_ALLOW_MULTISITE', true );
-        define('MULTISITE', true);
-        define('SUBDOMAIN_INSTALL', false);
-        define('DOMAIN_CURRENT_SITE', 'wpmulti.com.br'); 
-        define('PATH_CURRENT_SITE', '/');
-        define('SITE_ID_CURRENT_SITE', 1);
-        define('BLOG_ID_CURRENT_SITE', 1);
     volumes:
       - wordpress:/var/www/html
   db:
