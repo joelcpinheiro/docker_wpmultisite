@@ -1,7 +1,7 @@
-# WordPress Multisite on with Subdomain on Docker
+## WordPress Multisite on with Subdomain on Docker
 Docker compose file to create a WordPress Multisite Environment for your use.
 
-### Pre-requisites
+## Pre-requisites
 
 Need have installed docker compose on Server, if doesn't installed, please check out this link:
 
